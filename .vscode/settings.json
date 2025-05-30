@@ -1,5 +1,6 @@
 {
-    "docwriter.style": "DocBlock",
-    "docwriter.language": "English",
-    "docwriter.hotkey.mac": "⌘ + ."
+  "docwriter.style": "DocBlock",
+  "docwriter.language": "English",
+  "docwriter.hotkey.mac": "⌘ + .",
+  "dart.flutterSdkPath": ".fvm/versions/3.3.10"
 }

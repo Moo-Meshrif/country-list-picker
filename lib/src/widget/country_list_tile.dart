@@ -9,13 +9,13 @@ class CountryListTile extends StatelessWidget {
     super.key,
     required this.country,
     required this.language,
-    this.dialogTheme = const DialogThemeData(),
+    this.dialogTheme = const DialogThemeDataFromPicker(),
     this.displayName = Names.common,
   });
 
   final Country country;
   final Languages language;
-  final DialogThemeData dialogTheme;
+  final DialogThemeDataFromPicker dialogTheme;
   final Names displayName;
   @override
   Widget build(BuildContext context) {

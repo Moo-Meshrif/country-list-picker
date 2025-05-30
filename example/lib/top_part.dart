@@ -63,7 +63,7 @@ class TopPart extends StatelessWidget {
                         borderSide: BorderSide(width: input.borderWidth)),
             mask: input.mask,
           ),
-          dialogTheme: DialogThemeData(
+          dialogTheme: DialogThemeDataFromPicker(
             isShowFlag: dialog.countryFlag,
             isShowDialCode: dialog.countryDialCode,
             isShowFloatButton: dialog.upActionbutton,

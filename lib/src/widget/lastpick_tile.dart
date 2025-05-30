@@ -5,7 +5,7 @@ import '../model/languages.dart';
 import '../model/names.dart';
 
 class LastPickTile extends StatelessWidget {
-  final DialogThemeData dialogTheme;
+  final DialogThemeDataFromPicker dialogTheme;
   final Country country;
   final Languages language;
   final Names displayName;

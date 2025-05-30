@@ -30,3 +30,6 @@ migrate_working_dir/
 build/
 examples/linux/
 examples/windows/
+
+# FVM Version Cache
+.fvm/

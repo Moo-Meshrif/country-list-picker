@@ -4,7 +4,7 @@ import './alphabets_bar_themes.dart';
 export './tiles_theme_data.dart';
 export './alphabets_bar_themes.dart';
 
-class DialogThemeData {
+class DialogThemeDataFromPicker {
   ///An app bar to display at the top of country list dialog.
   final PreferredSizeWidget? appBar;
 
@@ -71,7 +71,7 @@ class DialogThemeData {
   ///```
   final AlphabetsBarThemeData alphabetsBarTheme;
 
-  const DialogThemeData({
+  const DialogThemeDataFromPicker({
     this.tilesTheme = const TilesThemeData(),
     this.alphabetsBarTheme = const AlphabetsBarThemeData(),
     this.isShowLastPickTile = true,

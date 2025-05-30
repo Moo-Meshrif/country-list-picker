@@ -18,7 +18,7 @@ class SelectionList extends StatelessWidget {
     required this.selectedCountry,
     this.localCountry,
     this.appBar,
-    this.dialogTheme = const DialogThemeData(),
+    this.dialogTheme = const DialogThemeDataFromPicker(),
     this.textDirection = TextDirection.ltr,
     required this.language,
     this.displayName = Names.common,
@@ -30,7 +30,7 @@ class SelectionList extends StatelessWidget {
   final Country? localCountry;
   final TextDirection textDirection;
   final Languages language;
-  final DialogThemeData dialogTheme;
+  final DialogThemeDataFromPicker dialogTheme;
   final TextEditingController _controller = TextEditingController();
   final Names displayName;
 

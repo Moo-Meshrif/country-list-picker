@@ -12,7 +12,7 @@ class SearchTile extends StatelessWidget {
     required this.elements,
   });
 
-  final DialogThemeData dialogTheme;
+  final DialogThemeDataFromPicker dialogTheme;
   final TextEditingController controller;
   final List<Country> elements;
 
