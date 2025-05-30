@@ -7,3 +7,4 @@ export '../src/model/countries.dart';
 export '../src/model/names.dart';
 export '../src/model/languages.dart';
 export '../src/country_list_picker.dart';
+export '../src/support/country_picker_helper.dart';
