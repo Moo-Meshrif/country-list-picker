@@ -43,6 +43,10 @@ class SearchTile extends StatelessWidget {
           controller: controller,
           decoration: InputDecoration(
               border: InputBorder.none,
+              enabledBorder: InputBorder.none,
+              focusedBorder: InputBorder.none,
+              errorBorder: InputBorder.none,
+              disabledBorder: InputBorder.none,
               contentPadding:
                   const EdgeInsets.only(left: 15, bottom: 0, top: 0, right: 15),
               hintText: dialogTheme.tilesTheme.searchHint,
