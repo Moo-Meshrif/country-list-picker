@@ -13,6 +13,18 @@ class DialogThemeDataFromPicker {
   /// This variable is declared as final, indicating that it can't be reassigned after being initialized.
   final bool isShowFloatButton;
 
+  /// [floatingActionButtonLocation] is a [FloatingActionButtonLocation] variable that determines the location of the float button.
+  /// This variable is declared as final, indicating that it can't be reassigned after being initialized.
+  final FloatingActionButtonLocation floatingActionButtonLocation;
+
+  /// [floatingActionButtonIconColor] is a [Color] variable that determines the color of the float button icon.
+  /// This variable is declared as final, indicating that it can't be reassigned after being initialized.
+  final Color? floatingActionButtonIconColor;
+
+  /// [floatingActionButtonBackgroundColor] is a [Color] variable that determines the background color of the float button.
+  /// This variable is declared as final, indicating that it can't be reassigned after being initialized.
+  final Color? floatingActionButtonBackgroundColor;
+
   /// [isShowDialCode] is a [bool] variable that determines whether or not to display dial codes.
   /// If set to true, dial codes will be shown, and if set to false, dial codes will be hidden.
   /// This variable is declared as final, indicating that it can't be reassigned after being initialized.
@@ -84,5 +96,8 @@ class DialogThemeDataFromPicker {
     this.isShowDialCode = true,
     this.style = const TextStyle(fontSize: 16),
     this.tileHeight = 50.0,
+    this.floatingActionButtonLocation = FloatingActionButtonLocation.endTop,
+    this.floatingActionButtonIconColor,
+    this.floatingActionButtonBackgroundColor,
   }) : assert(tileHeight >= 50.0, "tileheight must be greater than 50.0");
 }

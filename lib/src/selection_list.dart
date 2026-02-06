@@ -61,17 +61,22 @@ class SelectionList extends StatelessWidget {
     return Directionality(
       textDirection: textDirection,
       child: Scaffold(
-          floatingActionButtonLocation: FloatingActionButtonLocation.endTop,
+          floatingActionButtonLocation:
+              dialogTheme.floatingActionButtonLocation,
           floatingActionButton: dialogTheme.isShowFloatButton
               ? Selector<SettingsProvider, bool>(
                   selector: (_, settings) => settings.isShowFloatButton,
                   builder: (_, show, child) => show
                       ? FloatingActionButton(
                           backgroundColor:
-                              Theme.of(context).colorScheme.primary,
+                              dialogTheme.floatingActionButtonBackgroundColor ??
+                                  Theme.of(context).colorScheme.primary,
                           elevation: 0,
                           mini: true,
-                          child: const Icon(Icons.arrow_upward),
+                          child: Icon(
+                            Icons.arrow_upward,
+                            color: dialogTheme.floatingActionButtonIconColor,
+                          ),
                           onPressed: () => controllerScroll.jumpTo(0))
                       : const SizedBox.shrink(),
                 )
